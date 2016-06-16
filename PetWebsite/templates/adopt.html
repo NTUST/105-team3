@@ -1,0 +1,260 @@
+<!DOCTYPE html >
+
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>P_Family - 寵物認領養平台</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+ <link rel="stylesheet" href="/static/default.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+
+
+
+<!---->
+
+
+<style>
+
+  
+  body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #3ACDCE;
+		font-family:  sans-serif,微軟正黑體;
+		font-size: 12pt;
+		font-weight: 300;
+		color: #444444;
+
+	}
+	hr {
+	border:0; height:1px; background-color:#d4d4d4;
+	color:#d4d4d4	
+	}
+
+	.btn.dropdown-toggle:after {
+    content: "";
+
+
+  }
+  .form-group{
+  	display: inline-table;
+  	margin-right: 13px;
+
+  }
+
+  .box {
+		padding: 1em 0em;
+		
+		text-align: center;
+		border-radius: 0px 0px 6px 6px;
+	}
+	.thumbnail{
+		background-color: #eaeef1;
+
+	}
+	.thumbnail:hover{
+
+		background-color: #c0e5ff;
+    
+
+
+	}
+	#readmore{
+		margin-bottom:15px;
+
+	}
+	#adopt{
+		width:150px;
+		height:150px;
+		margin-top: 10px;
+
+	}
+</style>
+
+</head>
+<body >
+
+<div id="btn_top">
+<ul>
+<a href="team.html"><button id="btn1" class="button">開發團隊</button></a>
+<a href="contact.html"><button id="btn1" class="button">聯絡我們</button></a>
+<a href="login.html"><button id="btn1" class="button">登　入</button></a>
+<a href="homepage.html"><button id="btn1" class="button">首　頁</button></a>
+<button id="space" class="button">　　</button>
+
+</ul>
+</div>
+
+<div id="page" class="container">
+	<div id="header">
+		<div id="logo">
+			<img src="/static/images/dog1.png" alt="P_Family" style="width:70%;height:70%;" />
+      <h1><a href="homepage.html">P_Family</a></h1>
+			
+		</div>
+		<div id="menu" >
+			
+			<ul>
+				<a href="process.html"><li><button id="btn2" class="button">　認養流程　</button></li></a>
+				<li><button id="current2" class="button" >　領養專區　</button></li>
+				<a href="adopted.html"><li><button id="btn2" class="button">　送養專區　</button></li></a>
+				<a href="notice.html"><li><button id="btn2" class="button">飼養注意事項</button></li></a>
+				
+				<div>
+  					<button id="btn2" type="button" class=" btn  btn-info collapsed " data-toggle="collapse" data-target="#drag">　　走失協尋</button>
+  						<div id="drag" class="collapse">
+   							<a href="lost.html"><button id="btn3" class="button" >　寵物走失　</button></a>
+                      <a href="found.html"><button id="btn3" class="button" >　寵物招領　</button></a>
+                <a href="takemehome.html"><button id="btn3" class="button" >　帶我回家　</button></a>
+  						</div>
+				</div>
+				
+			</ul>
+			
+		</div>
+	</div>
+
+	<div id="main">
+		<div id="banner">
+			
+
+		</div>
+
+
+		<div id="welcome">
+			<div class="title">
+		
+				<img src="/static/images/icon-dog.png" style="width:30px;height:30px;margin-right:6px;margin-bottom:7px;">
+				<h3 style="display: inline; color:#0a7079">領養專區</h3>
+				<hr >
+
+			</div>
+		
+		</div>
+
+
+		
+			<div class="title">
+
+
+			
+  <form  action="" method="post"> {% csrf_token %}
+    <div class="form-group">
+
+      <label for="region">地區：</label>
+
+      <select  class="form-control" id="region"style="width:150px" >
+      	<option>全部</option>
+        <option>北部</option>
+        <option>中部</option>
+        <option>南部</option>
+        <option>東部</option>
+      </select>
+     </div>
+
+
+  
+    <div class="form-group">
+      <label for="region">種類：</label>
+
+      <select  class="form-control" id="region"style="width:150px" >
+        <option>全部</option>
+        <option>狗</option>
+        <option>貓</option>
+        <option>老鼠</option>
+        <option>其他</option>
+      </select>
+     </div>
+  
+
+  
+    <div class="form-group">
+      <label for="region">年紀：</label>
+
+      <select  class="form-control" id="region"style="width:150px" >
+      	<option>全部</option>
+        <option>幼年</option>
+        <option>成年</option>
+        
+      </select>
+     </div>
+
+     <div class="form-group">
+      <label for="region">性別：</label>
+
+      <select  class="form-control" id="region"style="width:150px" >
+        <option>全部</option>
+        <option>男</option>
+        <option>女</option>
+        
+      </select>
+     </div>
+
+  	<div class="form-group">
+  		<br>
+  	<button class="btn btn-default" style="margin-left:15px;margin-top:4px ;font-size: 14px;">搜尋</button>
+  	</div>
+
+  	<br>
+  	<br>
+  	
+
+  	<div class="row">
+      {% for pet in pets %}
+      
+  	    <div class="col-md-4">
+  	   	<center>
+  	      <div class="thumbnail">
+  	      	<img src="/static/images/{{ pet.pic_name }}"  class="img-thumbnail" id="adopt">
+  	        <h5 style="text-align:center;" >名字: {{ pet.name }}</h5>
+  	  		<h5 style="text-align:center;">年齡: {{ pet.age }}</h5>
+  	  		<h5 style="text-align:center;">性別: {{ pet.gender }}</h5>   
+          
+              
+              
+          
+  	  		<button type="submit" class="btn btn-info btn-md" id="readmore" name="data" value={{ pet.name }}>Read More</button> 
+          </from>
+
+  	        
+  	      </div>
+  	  	</center>
+  	    </div>
+  	    
+  	    {% endfor %}
+  	  </div>
+
+
+  	 <br>
+
+  	    <div >
+  	     	
+  	    </div>
+
+
+
+
+			</div>
+			
+	</div>
+</div>
+<center>
+  <div id="copyright" style="font-size: 12px;margin-top: 5px;margin-bottom: 5px;">
+        <span>Copyright &copy; 2016 All rights reserved. |  Photos by <a href="http://www.flaticon.com/">Flaticon</a> and <a href="https://unsplash.com/">Unsplash. |</a></span>
+        <span>Design by NTUST_網頁棒棒Jerry棒</span>
+        
+      </div>
+
+</center>
+</body>
+</html>

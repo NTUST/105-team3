@@ -1,0 +1,488 @@
+<!DOCTYPE html >
+
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>P_Family - 寵物認領養平台</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link href="default2.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="/static/default2.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<!---->
+
+
+<style>
+
+  
+  body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #3ACDCE;
+		font-family:  sans-serif,微軟正黑體;
+		font-size: 12pt;
+		font-weight: 300;
+		color: #444444;
+
+	}
+	hr {
+		border:0; height:1px; background-color:#d4d4d4;
+		color:#d4d4d4	
+	}
+</style>
+<style>
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+#header
+	{
+		position: relative;
+		float: left;
+		width: 300px;
+		padding: 0em 0em;
+
+		margin-left: -5px;
+
+		
+	}
+</style>
+<style>
+
+  
+  body
+  {
+    margin: 0px;
+    padding: 0px;
+    background: #3ACDCE;
+    font-family:  sans-serif,微軟正黑體;
+    font-size: 12pt;
+    font-weight: 300;
+    color: #444444;
+
+  }
+  hr {
+  border:0; height:1px; background-color:#d4d4d4;
+  color:#d4d4d4 
+  }
+
+  .btn.dropdown-toggle:after {
+    content: "";
+
+
+  }
+  .form-group{
+    display: inline-table;
+    margin-right: 13px;
+
+  }
+
+  .box {
+    padding: 1em 0em;
+    
+    text-align: center;
+    border-radius: 0px 0px 6px 6px;
+  }
+  .thumbnail{
+    background-color: #eaeef1;
+
+  }
+  .thumbnail:hover{
+
+    background-color: #c0e5ff;
+    
+
+
+  }
+  #readmore{
+    margin-bottom:15px;
+
+  }
+  #adopt{
+    width:150px;
+    height:150px;
+    margin-top: 10px;
+
+  }
+</style>
+</head>
+<body >
+
+<div id="btn_top">
+<ul>
+<a href="team.html"><button id="btn1" class="button">開發團隊</button></a>
+<a href="contact.html"><button id="btn1" class="button">聯絡我們</button></a>
+<a href="login.html"><button id="btn1" class="button">登　入</button></a>
+<a href="homepage.html"><button id="btn1" class="button">首　頁</button></a>
+<button id="space" class="button">　　</button>
+
+</ul>
+</div>
+
+<div id="page" class="container">
+	<div id="header">
+		<div id="logo">
+			<img src="/static/images/dog1.png" alt="P_Family" style="width:70%;height:70%;" />
+			<h1><a href="homepage.html">P_Family</a></h1>
+			
+		</div>
+		<div id="menu" >
+			
+			<ul>
+				<a href="process.html"><li><button id="btn2" class="button">　認養流程　</button></li></a>
+				<a href="adopt.html"><li><button id="btn2" class="button" >　領養專區　</button></li></a>
+				<a href="adopted.html"><li><button id="btn2" class="button">　送養專區　</button></li></a>
+				<a href="notice.html"><li><button id="btn2" class="button">飼養注意事項</button></li></a>
+				
+				
+				<div>
+  					<button id="btn2" type="button" class=" btn  btn-info collapsed " data-toggle="collapse" data-target="#drag">　　走失協尋</button>
+  						<div id="drag" class="">
+   							<a href="lost.html"><button id="btn3" class="button" >　寵物走失　</button></a>
+                			<a href="found.html"><button id="btn3" class="button" >　寵物招領　</button></a>
+   							<button id="current2" class="button" >　帶我回家　</button>
+  						</div>
+				</div>
+				
+			</ul>
+			
+		</div>
+	</div>
+
+	<div id="main">
+		<div id="banner">
+			
+
+		</div>
+
+
+		<div id="petsPpage">
+			<div class="title">
+				<img src="/static/images/icon-dog.png" style="width:30px;height:30px;margin-right:6px;margin-bottom:7px;">
+				<h3 style="display: inline; color:#0a7079">帶我回家</h3>
+				<hr>
+			</div>
+		</div>
+
+
+
+
+		<div class="allpets">
+			<ul class="nav nav-tabs">
+			     <li class="active"><a data-toggle="tab" href="#animal1">Dog</a></li>
+			    <li><a data-toggle="tab" href="#animal2">Cat</a></li>
+			    <li><a data-toggle="tab" href="#animal3">Hamsters</a></li>
+			    <li><a data-toggle="tab" href="#animal4">Rabbit</a></li>
+			    <li><a data-toggle="tab" href="#animal5">Others</a></li>
+			</ul>
+
+  			<div class="tab-content">
+			    <div id="animal1" class="tab-pane fade in active">
+			      <h3>Dog</h3>
+			      	<div class="col">
+					    <div class="col-md-4">
+
+					      <a href="bringmedetail.html" class="thumbnail">
+					      	<ul>
+				  				<li><h4>發現時間: <strong> 105/10/27</strong> </h4></li> 
+				  				<li><h4>地點:<strong> 台科圖書館</strong> </h4></li>
+				  				<li><h4>性別:<strong> 男</strong> </h4></li>
+				  				<li><h4>發現者姓名:<strong> 陳語晏</strong> </h4></li>
+				  				<li><h4>電話:<strong> 0987-123654</strong> </h4></li>
+				  				<li><h4>備註:<strong> 未接種疫苗</strong> </h4></li>
+				  			</ul>	 
+				  			<hr>
+
+					        <img src="/static/images/adopt_qb.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+
+					      </a>
+					       
+					   	</div>
+					</div>
+
+					<div class="col">
+					    <div class="col-md-4">
+
+					      <a href="#" class="thumbnail">
+					      	<ul>
+				  				<li><h4>發現時間: <strong> 105/10/10</strong></h4></li> 
+				  				<li><h4>地點:<strong> 台科三宿前</strong> </h4></li>
+				  				<li><h4>性別: <strong> 女</strong></h4></li>
+				  				<li><h4>發現者姓名: <strong> 連丕丕</strong></h4></li>
+				  				<li><h4>電話: <strong> 0912-256489</strong></h4></li>
+				  				<li><h4>備註: <strong> 掛有黑色項圈</strong></h4></li>
+				  			</ul>	 
+				  			<hr>
+					        <img src="/static/images/bringme_dog2.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+					      </a>
+					       
+					   	</div>
+					</div>	
+					<div class="col">
+					    <div class="col-md-4">
+
+					      <a href="#" class="thumbnail">
+					      	<ul>
+				  				<li><h4>發現時間: <strong> 105/10/10</strong></h4></li> 
+				  				<li><h4>地點:<strong> RB-105</strong> </h4></li>
+				  				<li><h4>性別: <strong> 女</strong></h4></li>
+				  				<li><h4>發現者姓名: <strong> 張蘇停</strong></h4></li>
+				  				<li><h4>電話: <strong> 0924-256878</strong></h4></li>
+				  				<li><h4>備註: <strong> 右腳受傷</strong></h4></li>
+				  			</ul>	 
+				  			</ul>	 
+				  			<hr>
+					        <img src="/static/images/bringme_dog.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+					      </a>
+					       
+					   	</div>
+					</div>	
+			    </div>
+			    <div id="animal2" class="tab-pane fade">
+			      <h3>Cat</h3>
+			      	<div class="col">
+					    <div class="col-md-4">
+					    	
+					      <a href="#cat" class="thumbnail">
+					        <ul>
+				  				<li><h4>發現時間: <strong> 105/10/10</strong></h4></li> 
+				  				<li><h4>地點:<strong> 台科三宿前</strong> </h4></li>
+				  				<li><h4>性別: <strong> 女</strong></h4></li>
+				  				<li><h4>發現者姓名: <strong> 連丕丕</strong></h4></li>
+				  				<li><h4>電話: <strong> 0912-256489</strong></h4></li>
+				  				<li><h4>備註: <strong> 掛有黑色項圈</strong></h4></li>
+				  			</ul>	 
+				  			<hr>    
+					        <img src="/static/images/adopt_cat.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+					      </a>
+					   	</div>
+					</div>
+					<div class="col">
+					    <div class="col-md-4">
+					    	
+					      <a href="#cat" class="thumbnail">
+					        <ul>
+				  				<li><h4>發現時間: <strong> 105/10/10</strong></h4></li> 
+				  				<li><h4>地點:<strong> RB-105</strong> </h4></li>
+				  				<li><h4>性別: <strong> 女</strong></h4></li>
+				  				<li><h4>發現者姓名: <strong> 張蘇停</strong></h4></li>
+				  				<li><h4>電話: <strong> 0924-256878</strong></h4></li>
+				  				<li><h4>備註: <strong> 右腳受傷</strong></h4></li>
+				  			</ul>	 
+				  			<hr>    
+					        <img src="/static/images/data_cat_life1.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+					      </a>
+					   	</div>
+					</div>
+					<div class="col">
+					    <div class="col-md-4">
+					    	
+					      <a href="#cat" class="thumbnail">
+					        <ul>
+				  				<li><h4>發現時間: <strong> 105/10/27</strong> </h4></li> 
+				  				<li><h4>地點:<strong> 台科圖書館</strong> </h4></li>
+				  				<li><h4>性別:<strong> 男</strong> </h4></li>
+				  				<li><h4>發現者姓名:<strong> 陳語晏</strong> </h4></li>
+				  				<li><h4>電話:<strong> 0987-123654</strong> </h4></li>
+				  				<li><h4>備註:<strong> 未接種疫苗</strong> </h4></li>
+				  			</ul>	 
+				  			<hr>    
+					        <img src="/static/images/data_cat_life2.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+					      </a>
+					   	</div>
+					</div>
+			    </div>
+			    <div id="animal3" class="tab-pane fade">
+			      <h3>Hamster</h3>
+			      		<div class="col">
+				      		<div class="col-md-4">
+						      <a href="#hamster" class="thumbnail">
+						        <ul>
+					  				<li><h4>發現時間: <strong> 105/10/10</strong></h4></li> 
+				  				<li><h4>地點:<strong> RB-105</strong> </h4></li>
+				  				<li><h4>性別: <strong> 女</strong></h4></li>
+				  				<li><h4>發現者姓名: <strong> 張蘇停</strong></h4></li>
+				  				<li><h4>電話: <strong> 0924-256878</strong></h4></li>
+				  				<li><h4>備註: <strong> 右腳受傷</strong></h4></li>
+					  			</ul>	 
+					  			<hr>    
+						        <img src="/static/images/bringme_mouse3.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+						      </a>
+						   	</div>
+				    	</div>
+				    	<div class="col">
+				      		<div class="col-md-4">
+						      <a href="#hamster" class="thumbnail">
+						        <ul>
+					  				<li><h4>發現時間: <strong> 105/10/27</strong> </h4></li> 
+				  				<li><h4>地點:<strong> 台科圖書館</strong> </h4></li>
+				  				<li><h4>性別:<strong> 男</strong> </h4></li>
+				  				<li><h4>發現者姓名:<strong> 陳語晏</strong> </h4></li>
+				  				<li><h4>電話:<strong> 0987-123654</strong> </h4></li>
+				  				<li><h4>備註:<strong> 未接種疫苗</strong> </h4></li>
+					  			</ul>	 
+					  			<hr>    
+						        <img src="/static/images/adopt_mouse.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+						      </a>
+						   	</div>
+				    	</div>
+				    	<div class="col">
+				      		<div class="col-md-4">
+						      <a href="#hamster" class="thumbnail">
+						        <ul>
+					  				<li><h4>發現時間: <strong> 105/10/10</strong></h4></li> 
+				  				<li><h4>地點:<strong> 台科三宿前</strong> </h4></li>
+				  				<li><h4>性別: <strong> 女</strong></h4></li>
+				  				<li><h4>發現者姓名: <strong> 連丕丕</strong></h4></li>
+				  				<li><h4>電話: <strong> 0912-256489</strong></h4></li>
+				  				<li><h4>備註: <strong> 掛有黑色項圈</strong></h4></li>
+					  			</ul>	 
+					  			<hr>    
+						        <img src="/static/images/data_mouse2_life1.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+						      </a>
+						   	</div>
+				    	</div>
+			    </div>
+			    <div id="animal4" class="tab-pane fade">
+			      <h3>Rabbit</h3>
+			      		<div class="col">
+				      		<div class="col-md-4">
+						      <a href="#rabbit" class="thumbnail">
+						        <ul>
+					  				<li><h4>發現時間: <strong> 105/10/10</strong></h4></li> 
+				  				<li><h4>地點:<strong> 台科三宿前</strong> </h4></li>
+				  				<li><h4>性別: <strong> 女</strong></h4></li>
+				  				<li><h4>發現者姓名: <strong> 連丕丕</strong></h4></li>
+				  				<li><h4>電話: <strong> 0912-256489</strong></h4></li>
+				  				<li><h4>備註: <strong> 掛有黑色項圈</strong></h4></li>
+					  			</ul>	 
+					  			<hr>    
+						        <img src="/static/images/adopt_rabbit.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+						      </a>
+						   	</div>
+					 	</div>
+					 	<div class="col">
+				      		<div class="col-md-4">
+						      <a href="#rabbit" class="thumbnail">
+						        <ul>
+					  				<li><h4>發現時間: <strong> 105/10/10</strong></h4></li> 
+				  				<li><h4>地點:<strong> RB-105</strong> </h4></li>
+				  				<li><h4>性別: <strong> 女</strong></h4></li>
+				  				<li><h4>發現者姓名: <strong> 張蘇停</strong></h4></li>
+				  				<li><h4>電話: <strong> 0924-256878</strong></h4></li>
+				  				<li><h4>備註: <strong> 右腳受傷</strong></h4></li>
+					  			</ul>	 
+					  			<hr>    
+						        <img src="/static/images/data_rabbit_life1.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+						      </a>
+						   	</div>
+					 	</div>  
+					 	<div class="col">
+				      		<div class="col-md-4">
+						      <a href="#rabbit" class="thumbnail">
+						        <ul>
+					  				<li><h4>發現時間: <strong> 105/10/27</strong> </h4></li> 
+				  				<li><h4>地點:<strong> 台科圖書館</strong> </h4></li>
+				  				<li><h4>性別:<strong> 男</strong> </h4></li>
+				  				<li><h4>發現者姓名:<strong> 陳語晏</strong> </h4></li>
+				  				<li><h4>電話:<strong> 0987-123654</strong> </h4></li>
+				  				<li><h4>備註:<strong> 未接種疫苗</strong> </h4></li>
+					  			</ul>	 
+					  			<hr>    
+						        <img src="/static/images/data_rabbit_life2.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+						      </a>
+						   	</div>
+					 	</div>    
+			    </div>
+			    <div id="animal5" class="tab-pane fade">
+			      <h3>Others</h3>
+			      	<div class="col">
+			      		<div class="col-md-4">
+					      <a href="#others" class="thumbnail">
+					        <ul>
+				  				<li><h4>發現時間: <strong> 105/10/27</strong> </h4></li> 
+				  				<li><h4>地點:<strong> 台科圖書館</strong> </h4></li>
+				  				<li><h4>性別:<strong> 男</strong> </h4></li>
+				  				<li><h4>發現者姓名:<strong> 陳語晏</strong> </h4></li>
+				  				<li><h4>電話:<strong> 0987-123654</strong> </h4></li>
+				  				<li><h4>備註:<strong> 未接種疫苗</strong> </h4></li>
+				  			</ul>	 
+				  			<hr>  
+
+					        <img src="/static/images/others4.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+					      </a>
+					   	</div>
+					</div>  	
+					<div class="col">
+			      		<div class="col-md-4">
+					      <a href="#others" class="thumbnail">
+					        <ul>
+				  				<li><h4>發現時間: <strong> 105/10/10</strong></h4></li> 
+				  				<li><h4>地點:<strong> 台科三宿前</strong> </h4></li>
+				  				<li><h4>性別: <strong> 女</strong></h4></li>
+				  				<li><h4>發現者姓名: <strong> 連丕丕</strong></h4></li>
+				  				<li><h4>電話: <strong> 0912-256489</strong></h4></li>
+				  				<li><h4>備註: <strong> 掛有黑色項圈</strong></h4></li>
+				  			</ul>	 
+				  			<hr>  
+
+					        <img src="/static/images/others3.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+					      </a>
+					   	</div>
+					</div>  	
+					<div class="col">
+			      		<div class="col-md-4">
+					      <a href="#others" class="thumbnail">
+					        <ul>
+				  				<li><h4>發現時間: <strong> 105/10/10</strong></h4></li> 
+				  				<li><h4>地點:<strong> RB-105</strong> </h4></li>
+				  				<li><h4>性別: <strong> 女</strong></h4></li>
+				  				<li><h4>發現者姓名: <strong> 張蘇停</strong></h4></li>
+				  				<li><h4>電話: <strong> 0924-256878</strong></h4></li>
+				  				<li><h4>備註: <strong> 右腳受傷</strong></h4></li>
+					  			</ul>	 
+				  			</ul>	 
+				  			<hr>  
+
+					        <img src="/static/images/others2.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+					      </a>
+					   	</div>
+					</div>  	
+			    </div>
+
+			</div>	
+				
+		</div>
+	</div>
+</div>
+
+<center>
+	<div id="copyright" style="font-size: 12px;margin-top: 5px;margin-bottom: 5px;">
+				<span>Copyright &copy; 2016 All rights reserved. |  Photos by <a href="http://www.flaticon.com/">Flaticon</a> and <a href="https://unsplash.com/">Unsplash. |</a></span>
+				<span>Design by NTUST_網頁棒棒Jerry棒</span>
+				
+			</div>
+
+</center>
+
+</body>
+</html>
